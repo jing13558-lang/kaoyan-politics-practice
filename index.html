@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122b32">
+  <meta name="description" content="2015—2026 考研政治历年真题逐题练习：答后即时判分并查看解析。">
+  <title>考研政治历年真题练习 · 2015—2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页"><span class="brand-mark">政</span><span>真题练习室 <small>考研政治 · 2015—2026</small></span></a>
+    <span class="header-note"><span class="pulse"></span> 即时反馈 · 随时继续</span>
+  </header>
+
+  <main id="top" class="layout">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="line"></span> 全国硕士研究生招生考试 · 思想政治理论</div>
+      <div class="intro-grid">
+        <div>
+          <h1 id="page-title">每做一题，<br><em>更清楚一点。</em></h1>
+          <p class="intro-copy">2015—2026 年试卷，按年份切换。每做完一题，马上知道对错，并查看解析。</p>
+          <div class="intro-actions"><button class="primary" id="start-button" type="button">开始答题 <span aria-hidden="true">↗</span></button><span>12 年真题 · 逐题练习</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-number">12<span>套历年试卷</span></div><div class="art-corner">PRACTICE<br>MAKES<br>PROGRESS</div></div>
+      </div>
+    </section>
+
+    <section class="workspace" id="practice" aria-label="答题区">
+      <div class="year-bar"><span>选择年份</span><div id="year-options" class="year-options" aria-label="试卷年份"></div></div>
+      <aside class="sidebar">
+        <div class="side-heading"><span><b id="sidebar-year">2026</b> 年答题进度</span><span id="progress-fraction">0 / 33</span></div>
+        <div class="progress-track" aria-label="答题进度"><div id="progress-bar"></div></div>
+        <div class="stat-row"><div><strong id="correct-count">0</strong><span>答对</span></div><div><strong id="wrong-count">0</strong><span>待巩固</span></div><div><strong id="left-count">33</strong><span>未作答</span></div></div>
+        <div class="performance-card" aria-live="polite">
+          <div><span>实时正确率</span><strong id="accuracy-rate">0%</strong></div>
+          <div><span id="score-label">客观题得分</span><strong><span id="live-score">0</span><small> / <span id="max-score">50</span> 分</small></strong></div>
+          <p id="score-rule">正式试卷满分 100 分：单选 16 分、多选 34 分、分析题 50 分。分析题需人工评阅。</p>
+        </div>
+        <p id="missing-note" class="missing-note" hidden></p>
+        <div class="side-divider"></div>
+        <div class="side-heading"><span>题目导航</span><span class="muted">点击跳转</span></div>
+        <div class="side-label">单选题 <span id="single-count"></span></div><div id="single-nav" class="number-grid"></div>
+        <div class="side-label">多选题 <span id="multi-count"></span></div><div id="multi-nav" class="number-grid"></div>
+        <div class="side-divider"></div>
+        <button class="analysis-link" id="analysis-link" type="button"><span>分析题 <small>34—38 · 阅读与自答</small></span><span aria-hidden="true">↗</span></button>
+        <div class="legend"><span><i class="dot done"></i> 已答对</span><span><i class="dot error"></i> 待巩固</span><span><i class="dot empty"></i> 未作答</span></div>
+      </aside>
+
+      <section class="question-area" aria-live="polite">
+        <div class="toolbar"><div class="toolbar-label"><span id="toolbar-year">2026</span> 年逐题练习 <span class="toolbar-slasher">/</span> <span id="section-name">单选题</span></div><button class="reset-button" id="reset-button" type="button"><span aria-hidden="true">↻</span> 重置本年进度</button></div>
+        <div id="score-summary" class="score-summary" role="status" hidden><div><span class="score-summary-eyebrow" id="summary-heading">本年客观题已完成</span><strong id="final-score">0 / 50 分</strong><span id="final-detail">正确率 0%</span></div><span class="score-summary-mark" aria-hidden="true">✓</span></div>
+        <div id="question-card" class="question-card"></div>
+        <div class="question-footer"><button id="prev-button" class="outline-button" type="button">← 上一题</button><span id="page-indicator"></span><button id="next-button" class="outline-button" type="button">下一题 →</button></div>
+        <p class="source-note">题目和解析依据你提供的各年份 PDF 整理。客观题答案以对应文件为准。</p>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><span>真题练习室 · 2015—2026</span><span>慢慢做，题题有收获。</span></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
