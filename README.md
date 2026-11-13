@@ -1,5 +1,7 @@
 # 考研政治历年真题练习
 
+**在线练习：** [打开考研政治历年真题练习](https://jing13558-lang.github.io/kaoyan-politics-practice/)
+
 静态网站文件位于 `dist/`，收录了 `zhenti-2015.pdf` 至 `zhenti-2026.pdf` 的题目。用静态网页服务器打开该目录即可练习；网站会按年份在浏览器本地保存作答进度。
 
 - 客观题：单选点选后、多选提交后显示对错与解析。共收录 389 题。
@@ -7,6 +9,6 @@
 - 分析题：每年 5 道，共 60 道。PDF 只有节选题干，未提供标准答案。网站提供阅读和本地作答保存，不进行自动判分。
 - 2016、2019、2024、2025 年的 PDF 缺少个别客观题，网站按原文件保留题号并标明缺失题目。
 
-`extract_questions.py` 从原始 PDF 重新生成 `dist/papers.json`。发布的网站只需要 `dist/` 与 `.openai/hosting.json`。
+`extract_questions.py` 从原始 PDF 重新生成 `dist/papers.json`。网站文件位于 `dist/`。
 
 在源码目录运行 `python build_offline.py` 可在上一级资料文件夹生成 `考研政治真题练习（离线版）.html`。离线版是单个文件，双击即可打开；进度保存在打开它的浏览器中，与在线网站的进度分开。
